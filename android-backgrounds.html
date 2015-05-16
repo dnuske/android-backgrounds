@@ -1,5 +1,9 @@
-<body>
-  <h1>Backgrounds</h1>
+<body class="card-panel teal lighten-2">
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Backgrounds</a>
+    </div>
+  </nav>
 
   {{> image_rack}}
 </body>
@@ -11,8 +15,8 @@
 </template>
 
 <template name="image_shelf">
-  <div class="shelf_container">
-    <h3>{{title}}</h3>
+  <div class="shelf_container card-panel blue-text text-darken-2">
+    <h4>{{title}}</h4>
     <img src="{{path}}" width="100%"/>
   </div>
 </template>
