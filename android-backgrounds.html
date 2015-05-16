@@ -1,0 +1,18 @@
+<body>
+  <h1>Backgrounds</h1>
+
+  {{> image_rack}}
+</body>
+
+<template name="image_rack">
+  {{#each images}}
+    {{> image_shelf}}
+  {{/each}}
+</template>
+
+<template name="image_shelf">
+  <div class="shelf_container">
+    <h3>{{title}}</h3>
+    <img src="{{path}}" width="100%"/>
+  </div>
+</template>
